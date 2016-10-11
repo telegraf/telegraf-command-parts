@@ -1,9 +1,10 @@
 {
   "name": "telegraf-command-parts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Command Parts Splitter for Telegraf",
   "main": "index.js",
   "author": "Samuel Kaiser",
+  "repository": "telegraf/telegraf-command-parts",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.7.1",
