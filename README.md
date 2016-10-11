@@ -9,13 +9,11 @@ its parts. These parts are stored in `ctx.state.command`.
 For example, if your text message is `/start@yourbot Hi!`, the
 `ctx.state.command` holds the following properties:
 
-Property    | Value if text is `/start@yourbot Hello world!`
------------ | ---------
-`text`      | `'/start@yourbot Hello world!'`
-`command`   | `'start'`
-`bot`       | `'yourbot'`
-`args`      | `'Hello world!'`
-`splitArgs` | `['Hello', 'world!']`
+- `text` '/start@yourbot Hello world!'
+- `command` 'start'
+- `bot` 'yourbot'
+- `args` 'Hello world!'
+- `splitArgs` ['Hello', 'world!']
 
 ## installation
 
