@@ -1,10 +1,9 @@
+const { mount } = require('telegraf');
+
 const regex = /^\/([^@\s]+)@?(?:(\S+)|)\s?([\s\S]*)$/i;
 
 /* eslint no-param-reassign: ["error", { "props": false }] */
-module.exports = () => function commandParts(ctx, next) {
-  if (ctx.updateType !== 'message' || ctx.updateSubType !== 'text') {
-    return next();
-  }
+module.exports = () => mount('text', (ctx, next) => {
   const parts = regex.exec(ctx.message.text);
   if (!parts) return next();
   const command = {
@@ -18,4 +17,4 @@ module.exports = () => function commandParts(ctx, next) {
   };
   ctx.state.command = command;
   return next();
-};
+});
