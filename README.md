@@ -6,7 +6,7 @@ Bot Framework.
 It provides a middleware that splits a command in a Telegram text message to
 its parts. These parts are stored in `ctx.state.command`.
 
-For example, if your text message is `/start@yourbot Hi!`, the
+For example, if your text message is `/start@yourbot Hello world!`, the
 `ctx.state.command` holds the following properties:
 
 - `text` '/start@yourbot Hello world!'
