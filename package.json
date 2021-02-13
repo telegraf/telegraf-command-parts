@@ -1,6 +1,6 @@
 {
   "name": "telegraf-command-parts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Command Parts Splitter for Telegraf",
   "main": "index.js",
   "author": "Samuel Kaiser",
@@ -21,6 +21,6 @@
     "telegram"
   ],
   "dependencies": {
-    "telegraf": "^3.1.0"
+    "telegraf": "^3.1.0 || ^4.0.0"
   }
 }
