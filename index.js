@@ -1,9 +1,9 @@
-const { mount } = require('telegraf');
+const { Telegraf } = require('telegraf');
 
 const regex = /^\/([^@\s]+)@?(?:(\S+)|)\s?([\s\S]+)?$/i;
 
 /* eslint no-param-reassign: ["error", { "props": false }] */
-module.exports = () => mount('text', (ctx, next) => {
+module.exports = () => Telegraf.mount('text', (ctx, next) => {
   const messageText = ctx.updateType === 'channel_post' ? ctx.channelPost.text : ctx.message.text;
   const parts = regex.exec(messageText);
   if (!parts) return next();
