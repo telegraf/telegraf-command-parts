@@ -1,3 +1,5 @@
+# ⚠️ This package is deprecated. Telegraf has a builtin command parser now. See [v4.13.0 release notes](https://github.com/telegraf/telegraf/releases/tag/v4.13.0).
+
 # Command Parts for Telegraf
 
 This module is a plugin for the [Telegraf](http://telegraf.js.org/) Telegram
